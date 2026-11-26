@@ -1,27 +1,36 @@
 {
   "$schema": "../core/schema/experience.schema.json",
-  "//": "EXEMPLE 1 — Les typons qui se décollent. Une seule brique « layers » : un PNG transparent par couleur imprimée, dans l'ordre d'impression (le premier est collé au papier).",
-  "title": "Affiche démo — typons",
+  "//": "Expérience RA : Quand une étoile meurt (Trou noir & Étoile à neutrons). 4 couches animées sur 8 secondes par le behavior cosmos-animation.",
+  "title": "Quand une étoile meurt",
   "author": "DNMade 2 Numérique",
   "onLost": "hide",
-  "theme": { "color": "#ff2d87", "textColor": "#ffffff", "font": "Space Grotesk" },
+  "replayOnFound": true,
+  "theme": {
+    "color": "#a855f7",
+    "textColor": "#ffffff",
+    "font": "Space Grotesk"
+  },
+  "behaviors": ["cosmos-animation"],
   "bricks": [
     {
-      "//": "spread = écart entre deux couches (en largeur d'affiche : 0.06 = 6 %). burst = les couches partent à plat puis se décollent une à une. float = léger flottement.",
-      "id": "typons",
+      "id": "cosmos",
       "type": "layers",
       "trigger": "found",
-      "appear": "fade",
-      "duration": 400,
+      "appear": "none",
+      "duration": 0,
+      "x": 0.5,
+      "y": 0.5,
+      "z": 0.03,
+      "width": 1.6,
+      "spread": 0.03,
+      "burst": false,
+      "float": 0,
       "layers": [
-        { "src": "assets/demo/typon-1-jaune.png", "blend": "multiply" },
-        { "src": "assets/demo/typon-2-rose.png", "blend": "multiply" },
-        { "src": "assets/demo/typon-3-bleu.png", "blend": "multiply" },
-        { "src": "assets/demo/typon-4-noir.png" }
-      ],
-      "spread": 0.06,
-      "burst": { "duration": 1400, "stagger": 250 },
-      "float": 0.01
+        { "src": "assets/cosmos/fond-cosmos.png", "depth": 0 },
+        { "src": "assets/cosmos/mascotte-trou-noir.png", "depth": 0.08 },
+        { "src": "assets/cosmos/mascotte-etoile-neutrons.png", "depth": 0.08 },
+        { "src": "assets/cosmos/carte-etoile.png", "depth": 0.05 }
+      ]
     }
   ]
 }
