@@ -1,24 +1,24 @@
 {
-  "imagePath": "image-targets/affiche-demo_luminance.jpg",
+  "imagePath": "image-targets/img-2232_luminance.jpg",
   "metadata": null,
-  "name": "affiche-demo",
+  "name": "img-2232",
   "type": "PLANAR",
   "properties": {
     "left": 0,
-    "top": 49,
-    "width": 1200,
-    "height": 1600,
+    "top": 0,
+    "width": 4284,
+    "height": 5712,
     "isRotated": false,
-    "originalWidth": 1200,
-    "originalHeight": 1697
+    "originalWidth": 4284,
+    "originalHeight": 5712
   },
   "resources": {
-    "originalImage": "affiche-demo_original.jpg",
-    "croppedImage": "affiche-demo_cropped.jpg",
-    "thumbnailImage": "affiche-demo_thumbnail.jpg",
-    "luminanceImage": "affiche-demo_luminance.jpg",
-    "posterImage": "affiche-demo_poster.jpg"
+    "originalImage": "img-2232_original.jpg",
+    "croppedImage": "img-2232_cropped.jpg",
+    "thumbnailImage": "img-2232_thumbnail.jpg",
+    "luminanceImage": "img-2232_luminance.jpg",
+    "posterImage": "img-2232_poster.jpg"
   },
-  "created": 1791449861801,
-  "updated": 1791449861801
+  "created": 1795682435144,
+  "updated": 1795682435144
 }
